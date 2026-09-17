@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://tankcalculator.net/</loc>
+<lastmod>2026-09-17T14:30:26.526Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://tankcalculator.net/about</loc>
+<lastmod>2026-09-17T14:30:26.526Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://tankcalculator.net/guides</loc>
+<lastmod>2026-09-17T14:30:26.526Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://tankcalculator.net/calculators</loc>
+<lastmod>2026-09-17T14:30:26.526Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+</urlset>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0b1626"/>
+    </linearGradient>
+    <linearGradient id="tankShell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="45%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <clipPath id="tankClip">
+      <rect x="16" y="38" width="96" height="52" rx="26" ry="26"/>
+    </clipPath>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Deep blue rounded-square background -->
+  <rect width="128" height="128" x="0" y="0" rx="26" ry="26" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Saddle supports -->
+    <path d="M34 88 L29 104 L47 104 L50 88 Z" fill="#334155" stroke="#0f172a" stroke-width="1.5"/>
+    <path d="M78 88 L81 104 L99 104 L94 88 Z" fill="#334155" stroke="#0f172a" stroke-width="1.5"/>
+
+    <!-- Horizontal tank shell (capsule side view) -->
+    <rect x="16" y="38" width="96" height="52" rx="26" ry="26" fill="url(#tankShell)" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Liquid fill (clipped to the tank) -->
+    <rect x="16" y="65" width="96" height="25" fill="url(#liquid)" clip-path="url(#tankClip)"/>
+
+    <!-- Liquid surface highlight line -->
+    <rect x="16" y="63.5" width="96" height="3" fill="#7dd3fc" clip-path="url(#tankClip)"/>
+
+    <!-- Tank top highlight -->
+    <path d="M40 44 Q64 39 88 44" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Dip stick graduation marks on right side -->
+    <g stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" opacity="0.55">
+      <line x1="99" y1="46" x2="106" y2="46"/>
+      <line x1="102" y1="55" x2="106" y2="55"/>
+      <line x1="102" y1="64" x2="106" y2="64"/>
+      <line x1="102" y1="73" x2="106" y2="73"/>
+      <line x1="99" y1="82" x2="106" y2="82"/>
+    </g>
+  </g>
+</svg>
